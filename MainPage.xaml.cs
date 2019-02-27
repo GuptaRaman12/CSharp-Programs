@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace MyFirstApp
+namespace App2
 {
     public partial class MainPage : ContentPage
     {
@@ -13,39 +13,17 @@ namespace MyFirstApp
         {
             InitializeComponent();
         }
-        async void btnClick(object sender, EventArgs args)
+        public void SimpleInterst(object sender, EventArgs args)
         {
-            string strName = textBox.Text;
-            labelMsg.Text = strName;
-            await DisplayAlert("My Name", strName, "ok");
-        }
-        void btnAdd(object sender, EventArgs args)
-        {
-            int v1 = int.Parse(num1.Text);
-            int v2 = int.Parse(num2.Text);
-            int v3 = v1 + v2;
-            num3.Text = v3.ToString();
-        }
-        void btnSub(object sender, EventArgs args)
-        {
-            int v1 = int.Parse(num1.Text);
-            int v2 = int.Parse(num2.Text);
-            int v3 = v1 - v2;
-            num3.Text = v3.ToString();
-        }
-        void btnMul(object sender, EventArgs args)
-        {
-            int v1 = int.Parse(num1.Text);
-            int v2 = int.Parse(num2.Text);
-            int v3 = v1 * v2;
-            num3.Text = v3.ToString();
-        }
-        void btnDiv(object sender, EventArgs args)
-        {
-            int v1 = int.Parse(num1.Text);
-            int v2 = int.Parse(num2.Text);
-            float v3 = v1 / v2;
-            num3.Text = v3.ToString();
+            int age = int.Parse(textBox1.Text);
+            double si = 30000 * 3;
+            if (age >= 60)
+                si = (si * 12) / 100;
+            else
+                si = (si * 15) / 100;
+
+            lblName.Text = "Simple Interest is  " + si.ToString();
         }
     }
 }
+   

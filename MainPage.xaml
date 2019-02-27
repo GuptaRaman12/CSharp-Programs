@@ -1,20 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyFirstApp.MainPage">
+             xmlns:local="clr-namespace:App2"
+             x:Class="App2.MainPage">
 
     <StackLayout Padding="40">
-        <!-- Place new controls here -->
-        <Entry x:Name="textBox" Placeholder="Enter your name"></Entry>
-        <Button Text="Click Me" Clicked="btnClick"></Button>
-        <Label x:Name="labelMsg" Font="Large"></Label>
-        <Entry x:Name="num1" Placeholder="ex:- 1-9"></Entry>
-        <Entry x:Name="num2" Placeholder="ex:- 1-9"></Entry>
-        <Entry x:Name="num3"></Entry>
-        <Button Text="Add" Clicked="btnAdd"></Button>
-        <Button Text="Sub" Clicked="btnSub"></Button>
-        <Button Text="Mul" Clicked="btnMul"></Button>
-        <Button Text="Div" Clicked="btnDiv"></Button>
+        <Entry x:Name="textBox1" Placeholder="Age"></Entry>
+        <Button Text="Sumbit" Clicked="SimpleInterst"></Button>
+        <Label x:Name="lblName"></Label>
     </StackLayout>
 
 </ContentPage>
